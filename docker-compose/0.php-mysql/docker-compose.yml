@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: socks-store-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - db:/var/lib/mysql:rw
+      - ./db_init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "${MYSQL_PORT}:3306"
+    expose:
+      - ${MYSQL_PORT}
+
+
+  web:
+    image: socker-store-web
+    build: ./php
+    container_name: socks-store-php
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    depends_on:
+      - db
+    volumes:
+      - ./php/:/var/www/html/
+    ports:
+      - "${PHP_PORT}:80"
+
+
+  mysql-client:
+    container_name: mysql-client
+    image: adminer
+    restart: always
+    ports:
+      - "3307:8080"
+
+
+  # phpmyadmin:
+  #   image: phpmyadmin
+  #   ports:
+  #     - 8080:80
+
+volumes:
+  db: {}
