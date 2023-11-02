@@ -27,9 +27,15 @@ ENV environment=$environment
 # Defined in 5.env
 ENV VERSION=$VERSION
 
+# Can also add metadata
+LABEL IMG_VERSION="v${VERSION}"
+
 CMD ["sh", "5.Environment.sh"]
 
 
 # Usage:
 # docker build -t img-env --build-arg environment=DEV -f 5.Environment.Dockerfile --no-cache .
-# docker run --rm --env PORT=3000 -e DB=mysql --env-file 5.env img-env
+# docker run --env PORT=3000 -e DB=mysql --env-file 5.env --name con-env img-env
+
+# Labels:
+# docker run --rm busybox echo "$(docker inspect con-env)"
