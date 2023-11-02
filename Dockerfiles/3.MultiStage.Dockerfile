@@ -16,3 +16,8 @@ CMD ["node", "1.index.js"]
 # Usage:
 # docker build -t img-staged -f 3.MultiStage.Dockerfile .
 # docker run -dit -p 3001:3000 --name con-staged img-staged
+
+
+# Named stages
+# FROM node:21 AS build
+# COPY --from=build . .
