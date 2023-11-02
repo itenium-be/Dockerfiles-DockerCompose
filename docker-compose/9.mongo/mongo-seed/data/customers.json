@@ -1,0 +1,3 @@
+[
+{"_id":{"$oid":"5ca4bbcea2dd94ee58162a69"},"username":"valenciajennifer","name":"Lindsay Cowan","address":"Unit 1047 Box 4089\nDPO AA 57348","birthdate":{"$date":{"$numberLong":"761701587000"}},"email":"cooperalexis@hotmail.com","accounts":[{"$numberInt":"116508"}],"tier_and_details":{"c06d340a4bad42c59e3b6665571d2907":{"tier":"Platinum","benefits":["dedicated account representative"],"active":true,"id":"c06d340a4bad42c59e3b6665571d2907"},"5d6a79083c26402bbef823a55d2f4208":{"tier":"Bronze","benefits":["car rental insurance","concierge services"],"active":true,"id":"5d6a79083c26402bbef823a55d2f4208"},"b754ec2d455143bcb0f0d7bd46de6e06":{"tier":"Gold","benefits":["airline lounge access"],"active":true,"id":"b754ec2d455143bcb0f0d7bd46de6e06"}}}
+]
