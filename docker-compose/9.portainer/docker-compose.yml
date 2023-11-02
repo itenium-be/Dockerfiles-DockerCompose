@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+    volumes:
+      - ${DOCKER_SOCKET}:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - ${PORTAINER_PORT_UI}:9000
+      - ${PORTAINER_PORT_SSH}:8000
+    expose:
+      - ${PORTAINER_PORT_UI}
+      - ${PORTAINER_PORT_SSH}
+    restart: ${RESTART_POLICY}
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+
+volumes:
+  portainer_data:
