@@ -1,2 +1,5 @@
+# NOTE:
+# This file should be called .dockerignore!
+
 node_modules/
 .git/
