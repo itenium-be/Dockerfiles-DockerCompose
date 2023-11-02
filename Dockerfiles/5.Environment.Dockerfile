@@ -39,3 +39,6 @@ CMD ["sh", "5.Environment.sh"]
 
 # Labels:
 # docker run --rm busybox echo "$(docker inspect con-env)"
+
+# Not set in the image metadata because not provided as --build-arg:
+# docker image inspect --format='{{json .Config.Labels}}' img-env

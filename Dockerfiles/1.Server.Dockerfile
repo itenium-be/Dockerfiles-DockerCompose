@@ -38,7 +38,6 @@ CMD ["node", "index.js"]
 
 
 # Inspection:
-# docker inspect con-server
 # docker logs con-server
 
 

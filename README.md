@@ -10,6 +10,12 @@ docker ps
 # docker run --init : run the CMD as PID 1 in the container
 #                     and handle graceful shutdown
 # See: https://github.com/krallin/tini/issues/8#issuecomment-146135930
+
+# Volume mounting
+# https://docs.docker.com/engine/reference/builder/#run---mount
+docker run --mount=[type=<TYPE>][,option=<value>[,option=<value>]...]
+docker run --mount type=bind,source="$(pwd)",target=/src
+# types: bind, cache, secret, ssh
 ```
 
 
