@@ -13,8 +13,12 @@ services:
     volumes:
       - db:/var/lib/mysql:rw
       - ./db_init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+    # Make the db reachable from the host system
     ports:
       - "${MYSQL_PORT}:3306"
+
+    # Expose the port to linked services
     expose:
       - ${MYSQL_PORT}
 
@@ -22,6 +26,10 @@ services:
   web:
     image: socker-store-web
     build: ./php
+    # For custom named Dockerfiles
+    # build:
+    #   context: ./php
+    #   dockerfile: dev.Dockerfile
     container_name: socks-store-php
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -38,7 +46,9 @@ services:
   mysql-client:
     container_name: mysql-client
     image: adminer
-    restart: always
+    env_file:
+      - variables.env
+    restart: ${RESTART}
     ports:
       - "3307:8080"
 
@@ -47,6 +57,13 @@ services:
   #   image: phpmyadmin
   #   ports:
   #     - 8080:80
+
+
+# networks:
+#   default:
+#     external:
+#       name: pre-existing-network
+
 
 volumes:
   db: {}

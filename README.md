@@ -1,5 +1,10 @@
-Docker CLI
-==========
+Dockerfiles and docker-compose
+==============================
+
+- [Docker Hub](https://hub.docker.com/)
+- [Complete intro to containers](https://btholt.github.io/complete-intro-to-containers/)
+- [Various Dockerfiles for desktop and servers](https://github.com/jessfraz/dockerfiles)
+
 
 ```sh
 cd Dockerfiles
@@ -17,17 +22,3 @@ docker run --mount=[type=<TYPE>][,option=<value>[,option=<value>]...]
 docker run --mount type=bind,source="$(pwd)",target=/src
 # types: bind, cache, secret, ssh
 ```
-
-
-Dockerfiles
-===========
-
-- [Docker Hub](https://hub.docker.com/)
-- [Complete intro to containers](https://btholt.github.io/complete-intro-to-containers/)
-- [Various Dockerfiles for desktop and servers](https://github.com/jessfraz/dockerfiles)
-
-
-
-Docker-Compose
-==============
-

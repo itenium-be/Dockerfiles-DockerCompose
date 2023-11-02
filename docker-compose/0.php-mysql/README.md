@@ -5,4 +5,5 @@ PHP + Mysql
 cd docker-compose
 cd 0.php-mysql
 docker compose up -d --build
+docker compose logs
 ```

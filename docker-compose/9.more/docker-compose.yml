@@ -1,0 +1,12 @@
+extends:
+  file: common.yml
+  service: webapp
+
+services:
+  web:
+    image: alpine:latest
+    init: true
+    command: bundle exec thin -p 3000
+    entrypoint: /code/entrypoint.sh
+    labels:
+      com.example.department: "IT"
