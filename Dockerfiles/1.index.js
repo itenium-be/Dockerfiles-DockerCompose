@@ -1,13 +1,3 @@
-// const http = require("http");
-
-// http.createServer(function(request, response) {
-//   console.log("Request received");
-//   response.end("Hello from server", "utf-8");
-// }).listen(3000);
-
-// console.log("server started");
-
-
 const express = require('express');
 const app = express();
 
