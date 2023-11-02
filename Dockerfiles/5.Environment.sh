@@ -13,5 +13,10 @@ echo "DB_PWD is a build arg but then mapped with ENV:"
 echo "DB_PWD=$DB_PWD"
 echo ""
 
-echo "environment was also exposed:"
+echo "docker build --build-arg environment=DEV"
+echo "and then exposed with ARG + ENV"
 echo "environment=$environment"
+echo ""
+
+echo "5.env file:"
+echo "VERSION=$VERSION"

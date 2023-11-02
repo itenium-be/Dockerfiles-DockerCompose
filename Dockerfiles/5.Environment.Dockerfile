@@ -21,11 +21,15 @@ ARG environment
 RUN echo "EXC: ARG environment"
 RUN echo "RES: environment=$environment"
 
+# Expose environment to the container
 ENV environment=$environment
+
+# Defined in 5.env
+ENV VERSION=$VERSION
 
 CMD ["sh", "5.Environment.sh"]
 
 
 # Usage:
 # docker build -t img-env --build-arg environment=DEV -f 5.Environment.Dockerfile --no-cache .
-# docker run --rm --env PORT=3000 -e DB=mysql img-env
+# docker run --rm --env PORT=3000 -e DB=mysql --env-file 5.env img-env
