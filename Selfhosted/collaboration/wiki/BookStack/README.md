@@ -5,12 +5,9 @@ BookStack
 
 ## Test
 
-[local test](http://localhost:5000)
+[local test](http://localhost:5002)
 
 ```sh
+# Not working out of the box 😭
 docker compose up -d
 ```
-
-## UI
-
-![yopass UI](yopass-ui.png)

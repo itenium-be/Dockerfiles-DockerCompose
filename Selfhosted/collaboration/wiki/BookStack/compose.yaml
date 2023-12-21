@@ -33,8 +33,8 @@ services:
       - MYSQL_USER=bookstack
       - MYSQL_PASSWORD=yourdbpass
     volumes:
-      - db:/config
+      - db_data:/config
     restart: unless-stopped
 
 volumes:
-  db:
+  db_data:
