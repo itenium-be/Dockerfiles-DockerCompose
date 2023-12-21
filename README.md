@@ -4,6 +4,7 @@ Dockerfiles and docker-compose
 - [Docker Hub](https://hub.docker.com/)
 - [Complete intro to containers](https://btholt.github.io/complete-intro-to-containers/)
 - [Various Dockerfiles for desktop and servers](https://github.com/jessfraz/dockerfiles)
+- [Valuable Docker Links](http://nane.kratzke.pages.mylab.th-luebeck.de/about/blog/2014/08/24/valuable-docker-links/)
 
 
 ```sh
