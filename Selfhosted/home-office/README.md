@@ -19,6 +19,18 @@ A community-supported supercharged version of paperless: scan, index and archive
 - [Docker Install](https://docs.paperless-ngx.com/setup/#docker_script)
 
 
+
+## Grocy
+
+ERP beyond your fridge - Grocy is a web-based self-hosted groceries & household management solution for your home
+
+- [Github](https://github.com/grocy/grocy) (⭐ 5.8k)
+- [LinuxServer Docker Image](https://hub.docker.com/r/linuxserver/grocy)
+
+![grocy](grocy.png)
+
+
+
 ## Rally
 
 Doodle alternative.
@@ -52,3 +64,15 @@ The most popular FOSS online survey tool on the web.
 The Open Event Organizer Server to Manage Events.
 
 [Github](https://github.com/fossasia/open-event-server) (⭐ 2.9k)
+
+
+
+## Awesome Selfhosted
+
+- [inventory-management](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#inventory-management)
+- [miscellaneous](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#miscellaneous)
+- [money-budgeting--management](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#money-budgeting--management)
+- [recipe-management](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#recipe-management)
+- [resource-planning](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#resource-planning)
+- [task-management--to-do-lists](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#task-management--to-do-lists)
+- [time-tracking](https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file#time-tracking)

@@ -23,3 +23,9 @@ Supported Systems:
 
 - [Github Dockercraft](https://github.com/docker/dockercraft) (⭐ 7k)
 - [Github docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) (⭐ 7.5k)
+
+
+## Babybuddy
+
+- [Github](https://github.com/babybuddy/babybuddy) (⭐ 1.8k)
+- [LinuxServer Docker Image](https://hub.docker.com/r/linuxserver/babybuddy)
