@@ -44,7 +44,7 @@ Support for many, many databases.
 - [Docker Install](https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container)
 - [Live Demo](https://demo.cloudbeaver.io)
 
-![cloudbeaver UI](uis/cloudbeaver-ui.png)
+![cloudbeaver UI](uis/cloudbeaver.png)
 
 
 
